@@ -1,0 +1,17 @@
+{
+  "require": {
+    "ext-json": "*",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "lib/"
+    }
+  },
+  "scripts": {
+    "develop": [
+      "composer install",
+      "vendor/bin/doctrine orm:schema-tool:update --force"
+    ]
+  }
+}
